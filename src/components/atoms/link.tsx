@@ -1,5 +1,4 @@
 'use client'
-// remover esse use cliente, recebendo a rota mae por props atraves do ssr
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
 import { usePathname } from "next/navigation";
 import { ReactNode } from "react";

@@ -7,7 +7,7 @@ interface LoaderProps {
 
 export function Loader({ loaderRef }: LoaderProps) {
   return (
-    <div ref={loaderRef} className="flex items-center justify-center p-10">
+    <div data-testid="loader-div" ref={loaderRef} className="flex items-center justify-center p-10">
       <LoaderIcon className="animate-rotate" />
     </div>
 
