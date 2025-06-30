@@ -1,9 +1,9 @@
 'use client'
 import { EpisodeListData, EPISODES_QUERY } from "@/queries";
 import { useQuery } from "@apollo/client";
-import { Loader } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { EpisodeCard } from "../organism";
+import { Loader } from "./loader";
 
 interface EpisodeWrapperProps {
   favorites: string[]
@@ -11,7 +11,7 @@ interface EpisodeWrapperProps {
 }
 
 export function EpisodeWrapper({ favorites, episodes }: EpisodeWrapperProps) {
-  const loader = useRef(null);
+  const loader = useRef<HTMLDivElement | null>(null);
 
   const { data, loading, fetchMore } = useQuery<EpisodeListData, { page: number }>(EPISODES_QUERY, {
     variables: { page: 1 },
@@ -69,9 +69,7 @@ export function EpisodeWrapper({ favorites, episodes }: EpisodeWrapperProps) {
       </div>
       {
         (data?.episodes.info.next || loading) && (
-          <div ref={loader} className="flex items-center justify-center p-10">
-            <Loader className="animate-rotate" />
-          </div>
+          <Loader loaderRef={loader} />
         )
       }
     </>
