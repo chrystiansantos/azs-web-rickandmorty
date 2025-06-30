@@ -1,3 +1,4 @@
+import { convertDate } from "@/util";
 import { AirDateEpisode, Card, Image } from "../atoms";
 import { EpisodeNameAndFavorite } from "../molecules";
 import { WatchedCharactersParticipate } from "./watched-characters-participate";
@@ -13,9 +14,7 @@ interface EpisodeCardProps {
 }
 
 export function EpisodeCard({ id, air_date, amountCharacters, name, episode, isFavorite, isWatched }: EpisodeCardProps) {
-  const dateFormat = new Intl.DateTimeFormat(
-    'pt-BR'
-  ).format(new Date(air_date))
+  const dateFormatted = convertDate(air_date)
 
   return (
     <Card>
@@ -27,7 +26,7 @@ export function EpisodeCard({ id, air_date, amountCharacters, name, episode, isF
           <EpisodeNameAndFavorite id={id} episode={episode} name={name} isFavorite={isFavorite} />
           <AirDateEpisode>
             Estreado em: <time dateTime={new Date(air_date).toString()}>
-              {dateFormat}
+              {dateFormatted}
             </time>
           </AirDateEpisode>
         </div>
