@@ -14,7 +14,7 @@ export function Favorite({ episodeFavorites: { episodesByIds } }: FavoriteProps)
     <div className="container">
       <HeaderNavigation />
       <div className="mt-28 text-center max-w-3xl mx-auto">
-        <Title>Episodios selecionados como favoritos</Title>
+        <Title>Episódio selecionados como favoritos</Title>
         <SubTitle>Os episódios apresentados aqui foram selecionados pelo próprio
           usuário como seus favoritos. Essa escolha reflete momentos que mais
           marcaram sua experiência com a série

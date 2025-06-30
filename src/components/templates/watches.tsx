@@ -14,7 +14,7 @@ export function Watches({ episodeWatches: { episodesByIds } }: WatchesProps) {
     <div className="container">
       <HeaderNavigation />
       <div className="mt-28 text-center max-w-3xl mx-auto">
-        <Title>Episodios selecionados como assitidos</Title>
+        <Title>Episódio selecionados como assitidos</Title>
         <SubTitle>Os episódios apresentados aqui foram selecionados pelo próprio
           usuário como seus episódios assitidos.
         </SubTitle>

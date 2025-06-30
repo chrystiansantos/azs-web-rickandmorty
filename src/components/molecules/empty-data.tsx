@@ -8,7 +8,7 @@ interface EmptyData {
 
 export function EmptyData({ title, subtitle }: EmptyData) {
   return (
-    <div className="text-center flex flex-col items-center gap-2 mt-48 max-w-72 mx-auto">
+    <div className="text-center flex flex-col items-center gap-2 mt-36 max-w-72 mx-auto">
       <Clapperboard className="size-10" />
       <TitleEpisode>
         {title}

@@ -8,7 +8,7 @@ interface HomeProps {
 
 export function Home({ episodeFavorites, episodeWatches }: HomeProps) {
   return (
-    <div className="container">
+    <div className="container pb-20">
       <HeaderNavigation />
       <Hero />
       <EpisodeWrapper

@@ -28,9 +28,9 @@ export type EpisodeListData = {
 }
 
 export const EPISODES_QUERY = gql`
-  query Episodes($page: Int!) {
-  episodes(page: $page) {
-      info {
+  query Episodes($page: Int!, $name: String!) {
+  episodes(page: $page,filter: {name: $name}) {
+    info {
       count
       pages
       next
