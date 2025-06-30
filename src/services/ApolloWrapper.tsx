@@ -8,7 +8,7 @@ import {
 
 const client = () => {
   const httpLink = new HttpLink({
-    uri: "https://rickandmortyapi.com/graphql",
+    uri: process.env.NEXT_PUBLIC_API_URL,
     fetchOptions: { cache: "no-store" },
   });
 
