@@ -1,5 +1,5 @@
 import { Episode } from "@/components/templates/episode";
-import { EPISODE_DETAIL_QUERY, EpisodeData } from "@/queries/get-episode-by-id";
+import { EPISODE_DETAIL_QUERY, EpisodeData } from "@/queries";
 import { query } from "@/services/ApolloClient";
 import { cookies } from "next/headers";
 
