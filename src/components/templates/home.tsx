@@ -1,5 +1,4 @@
-import { EpisodeWrapper } from "../atoms";
-import { HeaderNavigation, Hero } from "../organism";
+import { EpisodeWrapper, HeaderNavigation, Hero } from "../organism";
 
 interface HomeProps {
   episodeFavorites: string[]

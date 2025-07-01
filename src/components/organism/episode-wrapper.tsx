@@ -1,9 +1,9 @@
 'use client'
 import { useDebounceSearch, useListData } from "@/hooks";
+import { EpisodeCard } from ".";
+import { InputSearch } from "../atoms/input-search";
+import { Loader } from "../atoms/loader";
 import { EmptyData } from "../molecules";
-import { EpisodeCard } from "../organism";
-import { InputSearch } from "./input-search";
-import { Loader } from "./loader";
 
 interface EpisodeWrapperProps {
   favorites: string[]
