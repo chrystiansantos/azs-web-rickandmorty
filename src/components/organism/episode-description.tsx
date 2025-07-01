@@ -1,5 +1,5 @@
 import { Divider, Time, Typography } from "../atoms";
-import { WatchedFavoriteAction } from "../molecules/watched-favorite-action";
+import { WatchedFavoriteAction } from "../molecules";
 
 interface EpisodeDescriptionProps {
   id: string

@@ -7,4 +7,5 @@ export * from './episode-name-and-favorite'
 export * from './hero-description'
 export * from './watch-now-button'
 export * from './watched-button'
+export * from './watched-favorite-action'
 
