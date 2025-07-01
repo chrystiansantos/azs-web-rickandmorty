@@ -19,14 +19,16 @@ export function useListData({ searchName }: UseListDataProps) {
         if (entries[0].isIntersecting && data?.episodes.info.next) {
           fetchMore({
             variables: {
-              page: data?.episodes.info.next
+              page: data?.episodes.info.next,
+              name: searchName
             },
             updateQuery: (previousResult, { fetchMoreResult }) => {
               const newEntries = fetchMoreResult.episodes.results;
+              const idsParaRemover = new Set(newEntries.map(item => item.id));
               return {
                 episodes: {
                   info: fetchMoreResult.episodes.info,
-                  results: [...previousResult.episodes.results, ...newEntries ?? []],
+                  results: [...previousResult.episodes.results.filter(item => !idsParaRemover.has(item.id)), ...newEntries],
                 }
               };
             },
