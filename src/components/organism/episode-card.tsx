@@ -19,7 +19,7 @@ export function EpisodeCard({ id, air_date, amountCharacters, name, episode, isF
   return (
     <Card>
       <div className="relative w-full h-52 rounded-xl overflow-hidden">
-        <Image src={`/episodes/${episode}.webp`} alt={`Preview do episódio ${episode}`} />
+        <Image data-testid="image" src={`/episodes/${episode}.webp`} alt={`Preview do episódio ${episode}`} />
       </div>
       <div className="px-2 mt-4">
         <div className="h-20">
