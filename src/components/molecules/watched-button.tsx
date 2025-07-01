@@ -21,12 +21,14 @@ export function WatchedButton({ id, isWatch }: WatchedButtonProps) {
       className="flex items-center gap-2 cursor-pointer"
       onClick={watchEpisode}
     >
-      <BadgeCheck className={
-        twMerge(
-          "size-5 text-slate-300",
-          hasWatched && "text-green-500"
-        )
-      } />
+      <BadgeCheck
+        data-testid="badge-check-icon"
+        className={
+          twMerge(
+            "size-5 text-slate-300",
+            hasWatched && "text-green-500"
+          )
+        } />
       Assitido
     </Button>
   )
