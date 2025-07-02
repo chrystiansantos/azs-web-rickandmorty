@@ -85,7 +85,7 @@ Este projeto adota a abordagem do **Atomic Design** para organizar seus componen
   npm run test
   ```
 
-  - Usando o Yarn:
+- Usando o Yarn:
 
   ```bash
   yarn test
@@ -99,7 +99,7 @@ Este projeto adota a abordagem do **Atomic Design** para organizar seus componen
    npx playwright test --ui
   ```
 
-  - Usando o Yarn:
+- Usando o Yarn:
 
   ```bash
   yarn playwright test --ui
