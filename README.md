@@ -49,33 +49,33 @@ Este projeto adota a abordagem do **Atomic Design** para organizar seus componen
 
 3. Instale as dependências:
 
-   - Usando o npm:
+- Usando o npm:
 
-   ```bash
-   npm install
-   ```
+  ```bash
+  npm install
+  ```
 
-   - Usando o Yarn:
+- Usando o Yarn:
 
-   ```bash
-   yarn install
-   ```
+  ```bash
+  yarn install
+  ```
 
 4. Duplique o arquivo .env-example e renomeie-o para .env. Em seguida, preencha as variáveis de ambiente conforme necessário.
 
 5. Para rodar o projeto no ambiente de desenvolvimento:
 
-   - Usando o npm:
+- Usando o npm:
 
-   ```bash
-   npm run dev
-   ```
+  ```bash
+  npm run dev
+  ```
 
-   - Usando o Yarn:
+- Usando o Yarn:
 
-   ```bash
-   yarn dev
-   ```
+  ```bash
+  yarn dev
+  ```
 
 6. Para executar os teste unitarios:
 
