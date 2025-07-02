@@ -74,4 +74,4 @@ Este projeto adota a abordagem do **Atomic Design** para organizar seus componen
 
    A aplicação estará disponível em [http://localhost:3000](http://localhost:3000).
 
-https://github.com/user-attachments/assets/216fff6f-19c2-4f03-a453-efc4075a9de7
+https://github.com/user-attachments/assets/af50a9d1-c9f9-468f-bbeb-139b928b2c2f
