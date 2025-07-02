@@ -20,7 +20,7 @@ export function EpisodeNameAndFavorite({ id, episode, name, isFavorite }: Episod
     <div className="text-zinc-200 flex justify-between items-center gap-2">
       <TitleEpisode>{`${episode}, ${name}`}</TitleEpisode>
       <Button onClick={favoriteEpisode}>
-        <Heart fill={hasFavorite ? colors.red['500'] : "transparent"} className="text-red-500" />
+        <Heart data-testid="favorite-icon" fill={hasFavorite ? colors.red['500'] : "transparent"} className="text-red-500" />
       </Button>
     </div>
   )
