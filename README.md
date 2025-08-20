@@ -38,13 +38,13 @@ Este projeto adota a abordagem do **Atomic Design** para organizar seus componen
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/chrystiansantos/azs-web-rickandmorty.git
+   git clone https://github.com/chrystiansantos/rickandmorty-graphql.git
    ```
 
 2. Navegue até o diretório do projeto:
 
    ```bash
-   cd azs-web-rickandmorty
+   cd rickandmorty-graphql
    ```
 
 3. Instale as dependências:
