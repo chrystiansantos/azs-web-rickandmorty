@@ -23,12 +23,10 @@ export function useListData({ searchName }: UseListDataProps) {
               name: searchName
             },
             updateQuery: (previousResult, { fetchMoreResult }) => {
-              const newEntries = fetchMoreResult.episodes.results;
-              const idsParaRemover = new Set(newEntries.map(item => item.id));
               return {
                 episodes: {
                   info: fetchMoreResult.episodes.info,
-                  results: [...previousResult.episodes.results.filter(item => !idsParaRemover.has(item.id)), ...newEntries],
+                  results: [...previousResult.episodes.results, ...fetchMoreResult.episodes.results]
                 }
               };
             },
@@ -47,7 +45,7 @@ export function useListData({ searchName }: UseListDataProps) {
         observer.unobserve(loader.current);
       }
     };
-  }, [fetchMore, data?.episodes.info.next]);
+  }, [fetchMore, data?.episodes.info.next, searchName]);
 
   return {
     data,
